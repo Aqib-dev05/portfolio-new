@@ -1,11 +1,16 @@
-import wetherapp from "../images/wether.png"
-import Weather_Image from "../images/WeatherThumb.png";
-import FoodPanda from "../images/foodpanda.png";
-import QuizApp from "../images/quizApp.png";
-import HMLOGO from "../images/hiringMinePicture.PNG";
-import EcommercePic from "../images/ecommercepicture.PNG";
-import UTubeLogo from "../images/uTube.PNG";
-import FiverImg from "../images/fiver.png"
+import FiverImg from "../images/fiver.png";
+import TmsImg from "../images/tmss.png";
+import JobSeekImg from "../images/jobseek.png";
+import POrtfImg from "../images/port.png";
+import WeatherImg from "../images/weath.png";
+import ResturantImg from "../images/restr.png";
+import ManaImg from "../images/mana.png";
+import WizImg from "../images/wiz.png"
+
+
+
+
+
 
 
 
@@ -207,78 +212,78 @@ export const Bio = {
    
     {
       id: 0,
-      title: "Foodpanda clone",
-      date: "april 2024",
+      title: "Task Management System",
+      date: "Oct 2024",
       description:" A Fully responsive Foodpanda Website replica which is going to complete with fully handed scale.It is built up using html, css, bootstrap, Javascript and RestFul API",
-      image:FoodPanda,
-      tags: ["Javacript", "html","Css","Bootstrap","Restful API"],
+      image:TmsImg,
+      tags: ["Javacript", "Reactjs","Motion","Tailwind CSS","Restful API"],
       category: "web app",
-      github: "https://github.com/umairghani156/FoodPandaClone.git",
-      webapp: "https://6638aca72e9095abfd9f9539--peppy-creponne-601eb4.netlify.app/",
+      github: "https://github.com/Aqib-dev05/TMS-2.0",
+      webapp: "https://tms-frontend-amber.vercel.app",
     },
     {
       id: 1,
-      title: "Weather app",
-      date: "Jun 2021",
+      title: "Job Seek Application ",
+      date: "Nov 2024",
       description:
-        "Developed with React, my weather application provides precise and real-time weather updates. The modern and intuitive design allows you to easily view current conditions, forecasts, and weather alerts for your selected locations.",
-      image: Weather_Image,
-      tags: ["React Js","CSS", "Restful API","Antd"],
+"A comprehensive job-seeking application built using the MERN stack. It enables users to search and apply for jobs, create profiles, and manage applications. The platform includes features such as job listings, filtering options, and real-time notifications.",
+      image: JobSeekImg,
+      tags: ["React Js","MongoDB", "Restful API","Node.JS"],
       category: "Wep App",
-      github: "https://github.com/umairghani156/WeatherAppWithReactJs.git",
-      webapp: "https://weatherappumairahmed.netlify.app/",
+      github: "https://github.com/Aqib-dev05/Job-seeker-app",
+      webapp: "https://job-seeker-front.vercel.app/",
+    },
+    {
+      id: 2,
+      title: "My Portfolio",
+      date: "Sep 2024",
+      description:
+        "A portfolio website for a graphics designer showcasing their work, skills, and services. Built with HTML, CSS, and JavaScript, the site features a responsive design, interactive elements, and a gallery of design projects.",
+      image:POrtfImg,
+      tags: ["ReactJS","Tailwind CSS","Motion","Context APi", "CSS","Javascript"],
+      category: "web app",
+      github: "https://github.com/Aqib-dev05/Mana-portfolio",
+      webapp: "https://github.com/Aqib-dev05/Mana-portfolio",
     },
    
   {
-      id: 2,
-      title: "Quiz Application",
-      date: "feb 2024",
+      id: 3,
+      title: "Graphic Designer",
+      date: "Aug 2024",
       description:
-        "This quiz application offers an engaging and fun way to test your knowledge across development including HTML, CSS, and Javascript. With a user-friendly interface, you can challenge yourself, compete with friends, and track your progress. ",
-      image:QuizApp,
+        "A portfolio website for a graphics designer showcasing their work, skills, and services. Built with HTML, CSS, and JavaScript, the site features a responsive design, interactive elements, and a gallery of design projects.",
+      image:ManaImg,
       tags: ["HTML", "CSS","Javascript"],
       category: "web app",
-      github: "https://github.com/umairghani156/JavascriptUpto-Date-Projects.git",
-      webapp: "https://umairahmed-quiz-app.netlify.app/",
-    },
-    {
-      id: 3,
-      title: "HiringMine Website Replica",
-      date: "Jun 2024",
-      description:
-        "My website makes job hunting easy and rewarding. This platform brings together employers and job seekers, offering job postings for every industry and level.",
-      image:HMLOGO,
-      tags: ["HTML", "CSS","Javascript","React","Node Js","Express Js","Redux","Mongo Db","Nodemailer"],
-      category: "web app",
-      github: "https://github.com/umairghani156/HMFrontend.git",
-      webapp: "https://hm-frontendweb.vercel.app/",
+      github: "https://github.com/Aqib-dev05/Mana-portfolio",
+      webapp: "https://github.com/Aqib-dev05/Mana-portfolio",
     },
     {
       id: 4,
-      title: "Swiftcart ecommerce Website",
-      date: "May 2024",
+      title: "Resturent Website",
+      date: "Feb 2024",
       description:
-        "SwiftCart Store is your go-to eCommerce website for a seamless shopping experience. Explore a wide range of products, from electronics to fashion, all in one place.",
-      image:EcommercePic,
-      tags: ["Javascript","React Js","Node Js","Express Js","Redux","Mongo Db"],
+        "A Resturent site UI created with Html Css and JavaScript. It is a responsive website that showcases the menu, services, and contact information of the restaurant.",
+        
+      image:ResturantImg,
+      tags: ["HTML", "CSS","Javascript","Bootstrap"],
       category: "web app",
-      github: "https://github.com/umairghani156/eCommerceWeb.git",
-      webapp: "https://swiftcartstore.vercel.app/",
+      github: "https://github.com/Aqib-dev05/resturent-site",
+      webapp: "https://aqib-resturent-site.vercel.app/",
     },
     {
-      id: 4,
-      title: "SMIT-Tube Website (Youtube Replica)",
-      date: "Jun/22/2024",
+      id: 5,
+      title: "Weather APP",
+      date: "March 2024",
       description:
-        "I have developed a YouTube replica hosted at smittube.vercel.app. This project faithfully recreates the core functionalities of YouTube, enabling users to seamlessly browse, search, and interact with videos. It features a user-friendly interface for watching content, robust search capabilities, and social engagement through comments and likes.",
-      image:UTubeLogo,
-      tags: ["Javascript","React Js","Firebase","Node Js","Express Js","Redux (RTK)","Mongo Db","Cookies","JsonwebToken"],
+        "A weather application built with React that allows users to search for current weather conditions in any city. It fetches data from a weather API and displays temperature, humidity, and other relevant information.",
+      image:WeatherImg,
+      tags: ["Javascript","React Js","CSS"],
       category: "web app",
-      github: "https://github.com/umairghani156/uFrontend.git",
-      webapp: "https://smittube.vercel.app/",
+      github: "https://github.com/Aqib-dev05/react-wheather-app",
+      webapp: "https://react-weather-app-nine-blue.vercel.app/",
     },
-  
-  
+
   ];
   
   export const TimeLineData = [
