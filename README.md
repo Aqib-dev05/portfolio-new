@@ -1,70 +1,206 @@
-# Getting Started with Create React App
+# Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website built with React and Vite, showcasing projects, skills, experience, and education.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Responsive Design**: Fully responsive layout that works on all devices
+- **Dark/Light Theme**: Theme support (currently configured for dark theme)
+- **Project Showcase**: Display projects with direct links to source code and live demos
+- **Skills Section**: Highlight technical skills with visual cards
+- **Experience Timeline**: Showcase work experience and projects
+- **Education Section**: Display educational background
+- **Contact Form**: Integrated Formspree contact form for easy communication
+- **Smooth Animations**: Enhanced user experience with smooth scrolling and animations
 
-### `npm start`
+## 🛠️ Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React 18** - UI library
+- **Vite** - Build tool and dev server
+- **Styled Components** - CSS-in-JS styling
+- **Material-UI** - Component library
+- **React Router** - Routing
+- **Formspree** - Contact form handling
+- **Typewriter Effect** - Animated text effects
+- **React Icons** - Icon library
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Installation
 
-### `npm test`
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd "New PF"
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install dependencies:
+```bash
+npm install
+```
 
-### `npm run build`
+## 🏃 Running the Project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Development Mode
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Start the development server:
+```bash
+npm run dev
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The app will be available at [http://localhost:5173](http://localhost:5173)
 
-### `npm run eject`
+### Production Build
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Build for production:
+```bash
+npm run build
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The production build will be in the `dist` folder.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Preview Production Build
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Preview the production build locally:
+```bash
+npm run preview
+```
 
-## Learn More
+## 📁 Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+src/
+├── components/          # React components
+│   ├── About/          # About section
+│   ├── Cards/          # Reusable card components
+│   ├── Contact/        # Contact form component
+│   ├── Education/      # Education section
+│   ├── Experience/     # Experience section
+│   ├── Footer/         # Footer component
+│   ├── HeroSection/    # Hero/landing section
+│   ├── Navbar/         # Navigation bar
+│   ├── Projects/       # Projects showcase
+│   └── Skills/         # Skills section
+├── data/               # Data constants
+│   └── constant.js     # Project data, bio, skills, etc.
+├── images/             # Image assets
+├── themes/             # Theme configuration
+├── utils/              # Utility functions
+├── App.jsx             # Main App component
+└── main.jsx            # Entry point
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ⚙️ Configuration
 
-### Code Splitting
+### Formspree Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The contact form uses Formspree. To configure:
 
-### Analyzing the Bundle Size
+1. Sign up at [Formspree](https://formspree.io/)
+2. Create a new form
+3. Update the form ID in `src/components/Contact/index.jsx`:
+```javascript
+const [state, handleSubmit] = useForm("your-form-id");
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Firebase Deployment
 
-### Making a Progressive Web App
+The project includes Firebase configuration. Update `firebase.json` if needed:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```json
+{
+  "hosting": {
+    "public": "dist",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
+```
 
-### Advanced Configuration
+## 🚢 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Vercel
 
-### Deployment
+The project includes `vercel.json` for Vercel deployment. Simply connect your repository to Vercel.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Firebase Hosting
 
-### `npm run build` fails to minify
+1. Install Firebase CLI:
+```bash
+npm install -g firebase-tools
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. Login and initialize:
+```bash
+firebase login
+firebase init
+```
+
+3. Deploy:
+```bash
+npm run build
+firebase deploy
+```
+
+### Other Platforms
+
+Build the project and deploy the `dist` folder to any static hosting service:
+- Netlify
+- GitHub Pages
+- AWS S3
+- Any static hosting provider
+
+## 📝 Customization
+
+### Update Personal Information
+
+Edit `src/data/constant.js` to update:
+- Bio information (name, description, social links)
+- Skills
+- Projects
+- Experience
+- Education
+
+### Styling
+
+The project uses styled-components with theme support. Modify themes in:
+- `src/utils/theme.js` - Theme colors and styles
+- `src/themes/daefault.js` - Default theme configuration
+
+### Adding New Sections
+
+1. Create a new component in `src/components/`
+2. Import and add it to `src/App.jsx`
+3. Update navigation links if needed
+
+## 🐛 Troubleshooting
+
+### Build Errors
+
+If you encounter build errors:
+1. Clear node_modules and reinstall:
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
+
+2. Check Node.js version (recommended: Node 16+)
+
+### Port Already in Use
+
+If port 5173 is in use, Vite will automatically use the next available port.
+
+## 📄 License
+
+This project is private and personal.
+
+## 👤 Author
+
+**Aqib Ali**
+- GitHub: [@Aqib-dev05](https://github.com/Aqib-dev05)
+
+---
+
+Built with ❤️ using React and Vite
