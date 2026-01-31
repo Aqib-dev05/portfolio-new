@@ -242,8 +242,8 @@ export const Bio = {
       image:POrtfImg,
       tags: ["ReactJS","Tailwind CSS","Motion","Context APi", "CSS","Javascript"],
       category: "web app",
-      github: "https://github.com/Aqib-dev05/Mana-portfolio",
-      webapp: "https://github.com/Aqib-dev05/Mana-portfolio",
+      github: "https://aqib-dev05.vercel.app",
+      webapp: "https://github.com/Aqib-dev05/Portfolio-website",
     },
    
   {
@@ -256,7 +256,7 @@ export const Bio = {
       tags: ["HTML", "CSS","Javascript"],
       category: "web app",
       github: "https://github.com/Aqib-dev05/Mana-portfolio",
-      webapp: "https://github.com/Aqib-dev05/Mana-portfolio",
+      webapp: "https://abdulrehman-gd.vercel.app",
     },
     {
       id: 4,
