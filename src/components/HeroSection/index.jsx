@@ -13,7 +13,7 @@ import {
   SubTitle,
   ResumeButton,
 } from './HeroStyle';
-import HeroImg from '../../images/heroImg.jpg';
+import HeroImg from '../../images/aaqib.jpeg';
 import Typewriter from 'typewriter-effect';
 import { Bio } from '../../data/constant';
 import Resume from '../../images/Aqib Ali-Resume.pdf';
@@ -48,8 +48,8 @@ const HeroSection = () => {
             </ResumeButton>
           </HeroLeftContainer>
 
-          <HeroRightContainer id="Right">
-            <Img style={{ opacity: '0.9' }} src={HeroImg} alt="hero-image" />
+          <HeroRightContainer id="Right" >
+            <Img style={{ opacity: '0.9' }} loading='lazy' src={HeroImg} alt="hero-image" />
           </HeroRightContainer>
         </HeroInnerContainer>
       </HeroContainer>
