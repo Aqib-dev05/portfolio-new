@@ -6,7 +6,7 @@ import WeatherImg from "../images/weath.png";
 import ResturantImg from "../images/restr.png";
 import ManaImg from "../images/mana.png";
 import WizImg from "../images/wiz.png"
-
+import ClickB from "../images/clicknb.png"
 
 
 
@@ -208,11 +208,23 @@ export const Bio = {
   ];
   
   export const projects = [
+
+      {
+      id: -1,
+      title: "ClicknBuy Ecommerce Store",
+      date: "March 2026",
+      description:" A Fully responsive Foodpanda Website replica which is going to complete with fully handed scale.It is built up using html, css, bootstrap, Javascript and RestFul API",
+      image:ClickB,
+      tags: ["Node.js", "Express", "MongoDB", "Reactjs","Tailwind CSS","Restful API"],
+      category: "web app",
+      github: "https://github.com/Aqib-dev05/ClicknBuy",
+      webapp: "https://clicknbuy-frontend.vercel.app",
+    },
    
     {
       id: 0,
       title: "Task Management System",
-      date: "Oct 2024",
+      date: "Oct 2025",
       description:" A Fully responsive Foodpanda Website replica which is going to complete with fully handed scale.It is built up using html, css, bootstrap, Javascript and RestFul API",
       image:TmsImg,
       tags: ["Javacript", "Reactjs","Motion","Tailwind CSS","Restful API"],
@@ -223,7 +235,7 @@ export const Bio = {
     {
       id: 1,
       title: "Job Seek Application ",
-      date: "Nov 2024",
+      date: "Nov 2025",
       description:
 "A comprehensive job-seeking application built using the MERN stack. It enables users to search and apply for jobs, create profiles, and manage applications. The platform includes features such as job listings, filtering options, and real-time notifications.",
       image: JobSeekImg,
@@ -273,7 +285,7 @@ export const Bio = {
     {
       id: 5,
       title: "Weather APP",
-      date: "March 2024",
+      date: "March 2025",
       description:
         "A weather application built with React that allows users to search for current weather conditions in any city. It fetches data from a weather API and displays temperature, humidity, and other relevant information.",
       image:WeatherImg,
@@ -282,6 +294,19 @@ export const Bio = {
       github: "https://github.com/Aqib-dev05/react-wheather-app",
       webapp: "https://react-weather-app-nine-blue.vercel.app/",
     },
+    {
+      id: 6,
+      title: "Wizard X Clone",
+      date: "Augut 2024",
+      description:
+        "A clone of the Wizard X website, which is a platform for learning web development.Created using Html,CSS,javaScript and GSAP animations. The clone includes features such as course listings,responsive design.",
+      image: WizImg,
+      tags: ["HTML", "CSS","Javascript","GSAP"],
+      category: "web app",
+      github: "https://github.com/Aqib-dev05/WizardX",
+      webapp: "https://aqib-wizard-x.vercel.app/",
+    },
+
 
   ];
   
