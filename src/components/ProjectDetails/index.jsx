@@ -215,7 +215,7 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
                             <Members>
                                 {project?.member.map((member) => (
                                     <Member>
-                                        <MemberImage src={member.img} />
+                                        <MemberImage src={member.img} alt={member.name} loading='lazy' />
                                         <MemberName>{member.name}</MemberName>
                                         <a href={member.github} target="new" style={{textDecoration: 'none', color: 'inherit'}}>
                                             <GitHub />

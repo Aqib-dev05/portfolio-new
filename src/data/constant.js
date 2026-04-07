@@ -211,7 +211,7 @@ export const Bio = {
 
       {
       id: -1,
-      title: "ClicknBuy Ecommerce Store",
+      title: "ClicknBuy Ecom. Store",
       date: "March 2026",
       description:" A Fully responsive Foodpanda Website replica which is going to complete with fully handed scale.It is built up using html, css, bootstrap, Javascript and RestFul API",
       image:ClickB,
